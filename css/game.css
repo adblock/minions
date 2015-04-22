@@ -1,0 +1,548 @@
+body,html{
+    font-family: sans-serif;
+    padding: 0px;
+    margin: 0px;
+    height: 100%;
+}
+body.start {
+    background: url("../../img/game/bg.jpg");
+    background-size: cover;
+}
+ul {
+    padding: 0px;
+}
+li {
+    list-style: none;
+}
+#loading {
+    width: 114px;
+    height: 180px;
+    position: absolute;
+    top: 45%;
+    margin-top: -75px;
+    left: 50%;
+    margin-left: -57px;
+    text-align: center;
+}
+.element {
+    background: url("../../img/game/img-tiny.png?201504071156") no-repeat;
+    background-size: 699px 1576px;
+}
+.game-title {
+    position: absolute;
+    top: 30px;
+    margin-left: -145px;
+    left: 50%;
+    background-position: -23px -24px;
+    width: 289px;
+    height: 289px;
+}
+.game-start {
+    position: absolute;
+    top: 300px;
+    margin-left: -108px;
+    left: 50%;
+    background-position: -357px -2px;
+    width: 215px;
+    height: 77px;
+    cursor:pointer;
+}
+.game-info {
+    position: absolute;
+    top: 400px;
+    margin-left: -35px;
+    left: 50%;
+    background-position: -580px -5px;
+    width: 69px;
+    height: 69px;
+    cursor:pointer;
+    margin-bottom: 30px;
+}
+.rule .rule-bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    cursor:pointer;
+}
+.rule .rule-bg .rule-model {
+    position: absolute;
+    width: 288px;
+    height: 465px;
+    top: 45%;
+    margin-top: -232.5px;
+    left: 50%;
+    margin-left: -144px;
+    background-position: -21px -345px;
+}
+.rule .rule-bg .rule-model .in {
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+.rule .rule-bg .rule-model .in .closeThis {
+    cursor: pointer;
+    position: absolute;
+    top: 100px;
+    right: 0px;
+    height: 57px;
+    width: 57px;
+}
+
+.rule .rule-bg .rule-model .in .yesThis {
+    cursor: pointer;
+    position: absolute;
+    bottom: 20px;
+    right: 60px;
+    height: 63px;
+    width: 157px;
+}
+.none-blank-bg {
+    top: 0px;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 10000;
+}
+.blank-bg {
+    top: 0px;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    z-index: 10000;
+}
+.Trouble .blue-bg {
+    box-shadow: 0 3px 10px 0 #545454;
+    position: absolute;
+    top:50%;
+    margin-top: -37px;
+    width: 100%;
+    height: 74px;
+    background: #256DBA;
+}
+.Trouble .blue-bg .trouble-Kevin{
+    margin: 0 auto;
+    background-position: -322px -573px;
+    width: 223px;
+    height: 68px;
+}
+.Trouble .blue-bg .trouble-Bob{
+    margin: 0 auto;
+    background-position: -322px -650px;
+    width: 224px;
+    height: 69px;
+}
+.Trouble .blue-bg .trouble-Tom{
+    margin: 0 auto;
+    background-position: -322px -733px;
+    width: 223px;
+    height: 68px;
+}
+.Trouble .blue-bg .trouble-Carl{
+    margin: 0 auto;
+    background-position: -322px -812px;
+    width: 223px;
+    height: 68px;
+}
+.Trouble .blue-bg .trouble-5{
+    margin: 0 auto;
+    font-size: 24px;
+    color: #fff;
+    text-align: center;
+    line-height: 68px;
+    width: 223px;
+    height: 68px;
+    text-shadow:1px 1px 1px #2E2E2E;
+}
+.gameover {
+    position: absolute;
+    top:42%;
+    left: 50%;
+    margin-left: -160px;
+    margin-top: -200px;
+    background-position:  -364px -92px;
+    width: 318px;
+    height: 488px;
+    cursor:pointer;
+}
+.gameover .in {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.gameover .in .rank {
+    font-size: 24px;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 265px;
+}
+.gameover .in .rank strong {
+    color: #ffd800;
+}
+.gameover .in .currentScore {
+    font-size: 24px;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 225px;
+}
+
+.Table {
+    position: relative;
+    height: 314px;
+    width: 314px;
+    margin: 0 auto;
+}
+.Table div {
+    position: absolute;
+}
+.Table ul {
+    margin: 0px;
+}
+.Table li {
+    display: inline-block;
+    width: 44px;
+    height: 44px;
+    cursor: pointer;
+}
+.Table li.xhr_Stuart {
+    background-position:  -565px -594px;
+}
+.Table li.xhr_Dave {
+    background-position:  -565px -643px;
+}
+.Table li.xhr_Kevin {
+    background-position:  -565px -691px;
+}
+.Table li.xhr_Bob {
+    background-position:  -565px -739px;
+}
+.Table li.xhr_Tom {
+    background-position:  -565px -787px;
+}
+.Table li.xhr_Carl {
+    background-position:  -565px -835px;
+}
+
+
+
+.tablesize_2 {
+    margin-left: -61.5px;
+    left: 50%;
+    margin-top: -62px;
+    top: 50%;
+    background-position: -21px -1015px;
+    width: 123px;
+    height: 124px;
+}
+.tablesize_3 {
+    margin-left: -85px;
+    left: 50%;
+    margin-top: -85px;
+    top: 50%;
+    background-position: -158px -1015px;
+    width: 170px;
+    height: 170px;
+}
+.tablesize_4 {
+    margin-left: -109px;
+    left: 50%;
+    margin-top: -109px;
+    top: 50%;
+    background-position: -341px -1015px;
+    width: 218px;
+    height: 218px;
+}
+.tablesize_5 {
+    margin-left: -133px;
+    left: 50%;
+    margin-top: -133px;
+    top: 50%;
+    background-position: -21px -1198px;
+    width: 266px;
+    height: 266px;
+}
+.tablesize_6 {
+    margin-left: -157px;
+    left: 50%;
+    margin-top: -157px;
+    top: 55%;
+    background-position: -301px -1249px;
+    width: 313px;
+    height: 314px;
+}
+.tablesize_2 li {
+    margin-top: 2px;
+    margin-left: 4px;
+}
+
+.tablesize_3 li {
+    margin-top: 2px;
+    margin-left: 6px;
+}
+.tablesize_4 li {
+    margin-top:  1px;
+    margin-left: 6px;
+}
+.tablesize_5 li {
+    margin-top: 0px;
+    margin-left: 5px;
+}
+.tablesize_6 li {
+    margin-top: 0px;
+    margin-left: 5px;
+}
+
+.tablesize_2 ul {
+    padding: 12px 10px 10px 10px;
+}
+.tablesize_3 ul {
+    padding: 10px 7px 7px 7px;
+}
+.tablesize_4 ul {
+    padding: 12px 7px 7px 6px;
+}
+.tablesize_5 ul {
+    padding: 12px 7px 7px 7px;
+}
+.tablesize_6 ul {
+    padding: 12px 9px 9px 7px;
+}
+#top-panle {
+    margin: 0 auto;
+    background-position: -2px -835px;
+    width: 296px;
+    height: 69px;
+    margin-top: 20px;
+    position: relative;
+}
+#top-panle .highScore {
+    font-size: 18px;
+    font-weight: bold;
+    color: #223186;
+    position: absolute;
+    left: 84px;
+    top: 10px;
+}
+#top-panle .currentScore {
+    font-size: 18px;
+    font-weight: bold;
+    color: #2447f4;
+    position: absolute;
+    left: 84px;
+    top: 36px;
+}
+#top-panle .Checkpoint {
+    position: absolute;
+    top: 30px;
+    width: 53px;
+    height: 35px;
+    left: 13px;
+}
+
+.CountDown {
+    width: 300px;
+    margin: 0 auto;
+    top: 20px;
+    position: relative;
+    height: 70px;
+}
+
+.CountDown .yuan{
+    position: absolute;
+    z-index: 10;
+    left: 0px;
+    top: 0px;
+    background-position: -12px -914px;
+    width: 45px;
+    height: 45px;
+}
+.CountDown .lan{
+    position: absolute;
+    z-index: 1;
+    left: 0px;
+    top: 12px;
+    background-position: -67px -920px;
+    width: 299px;
+    height: 33px;
+}
+.CountDown .miao{
+    z-index: 111;
+    position: absolute;
+    left: 50px;
+    top: 7px;
+}
+.CountDown .miao .miaoNum {
+    vertical-align: top;
+    display: inline-block;
+}
+.CountDown .miao .miaoText {
+    margin-top: -2px;
+    background-position: -589px -1120px;
+    width: 20px;
+    height: 19px;
+}
+.CountDown .miao .miaoNum_10 {
+    background-position: -590px -1143px;
+    width: 25px;
+    height: 15px;
+}
+.CountDown .miao .miaoNum_0 {
+    background-position: -590px -1102px;
+    width: 16px;
+    height: 15px;
+}
+.CountDown .miao .miaoNum_1 {
+    background-position: -594px -940px;
+    width: 8px;
+    height: 15px;
+}
+.CountDown .miao .miaoNum_2 {
+    background-position: -590px -958px;
+    width: 16px;
+    height: 15px;
+}
+.CountDown .miao .miaoNum_3 {
+    background-position: -590px -976px;
+    width: 16px;
+    height: 15px;
+}
+.CountDown .miao .miaoNum_4 {
+    background-position: -590px -994px;
+    width: 16px;
+    height: 15px;
+}
+.CountDown .miao .miaoNum_5 {
+    background-position: -590px -1012px;
+    width: 16px;
+    height: 15px;
+}
+.CountDown .miao .miaoNum_6 {
+    background-position: -590px -1030px;
+    width: 16px;
+    height: 15px;
+}
+.CountDown .miao .miaoNum_7 {
+    background-position: -589px -1048px;
+    width: 17px;
+    height: 16px;
+}
+.CountDown .miao .miaoNum_8 {
+    background-position: -590px -1066px;
+    width: 16px;
+    height: 15px;
+}
+.CountDown .miao .miaoNum_9 {
+    background-position: -589px -1084px;
+    width: 17px;
+    height: 15px;
+}
+.CountDown .process{
+    position: absolute;
+    top: 5px;
+    left: 30px;
+    background-position: -5px -971px;
+    width: 250px;
+    height: 20px;
+}
+.CountDown .process.process_10{
+    width: 250px;
+}
+.CountDown .process.process_9{
+    width: 225px;
+}
+.CountDown .process.process_8{
+    width: 200px;
+}
+.CountDown .process.process_7{
+    width: 175px;
+}
+.CountDown .process.process_6{
+    width: 150px;
+}
+.CountDown .process.process_5{
+    width: 125px;
+}
+.CountDown .process.process_4{
+    width: 100px;
+}
+.CountDown .process.process_3{
+    width: 75px;
+}
+.CountDown .process.process_2{
+    width: 50px;
+}
+.CountDown .process.process_1{
+    width: 25px;
+}
+.CountDown .process.process_0{
+    width: 0px;
+}
+
+.CheckpointNum {
+    display: inline-block;
+}
+.CheckpointNum_0 {
+    background-position: -634px -915px;
+    width: 25px;
+    height: 31px;
+}
+.CheckpointNum_1 {
+    background-position: -635px -594px;
+    width: 25px;
+    height: 31px;
+}
+.CheckpointNum_2 {
+    background-position: -634px -630px;
+    width: 25px;
+    height: 31px;
+}
+.CheckpointNum_3 {
+    background-position: -635px -665px;
+    width: 25px;
+    height: 31px;
+}
+.CheckpointNum_4 {
+    background-position: -633px -701px;
+    width: 25px;
+    height: 31px;
+}
+.CheckpointNum_5 {
+    background-position: -635px -736px;
+    width: 25px;
+    height: 31px;
+}
+.CheckpointNum_6 {
+    background-position: -634px -772px;
+    width: 25px;
+    height: 31px;
+}
+.CheckpointNum_7 {
+    background-position: -634px -808px;
+    width: 25px;
+    height: 31px;
+}
+.CheckpointNum_8 {
+    background-position: -634px -843px;
+    width: 25px;
+    height: 31px;
+}
+.CheckpointNum_9 {
+    background-position: -634px -879px;
+    width: 25px;
+    height: 31px;
+}
+
+@media (max-height: 415px) {
+    #top-panle{
+        margin-top: 10px;
+    }
+    .CountDown {
+        top: 7px;
+        height: 45px;
+    }
+}
