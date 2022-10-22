@@ -7,12 +7,12 @@
 <link rel="stylesheet" href="http://apps.bdimg.com/libs/animate.css/3.1.0/animate.min.css"/>
 <link rel="stylesheet" href="css/game.css"/>
 </head>
-<body data-preload="img/game/img-tiny.png">
+<body data-preload="https://raw.githubusercontent.com/adblock/minions/master/img/game/loading.gif">
 <div id="game">
     <div id="loading" >
-        <img src="img/game/loading.gif" width="66" alt=""/>
+        <img src="https://raw.githubusercontent.com/adblock/minions/master/img/game/loading.gif" width="66" alt=""/>
     </div>
-    <img id="hidebg" style="display: none" src="img/game/bg.jpg" alt=""/>
+    <img id="hidebg" style="display: none" src="https://raw.githubusercontent.com/adblock/minions/master/img/game/bg.jpg" alt=""/>
 </div>
 
 <script src="http://apps.bdimg.com/libs/jquery/2.1.1/jquery.min.js"></script>
@@ -28,7 +28,7 @@
         signature: "<?=$jsSDK["signature"]?>",// 必填，签名，见附录1
         jsApiList: ['onMenuShareTimeline','onMenuShareAppMessage'] // 必填，需要使用的JS接口列表，所有JS接口列表见附录2
     });
-    wx.wechatShare = "<?=Utils::getImgUrl("img/game/wechatShare.jpg")?>";
+    wx.wechatShare = "<?=Utils::getImgUrl("https://raw.githubusercontent.com/adblock/minions/master/img/game/wechatShare.jpg")?>";
     wx.ready(function() {
         //分享的设置
         wx.onMenuShareTimeline({
