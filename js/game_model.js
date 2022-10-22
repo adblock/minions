@@ -36,25 +36,26 @@ var Game = Game || {};
             this.fetch({silent:true});
             this.view.Init = new Game.View.Init({model:this});
             this.on({
-                "change:status":function(){
-                    this.save([],{
-                        success:function(model){
-                            React.render(<Game.ReactClass.GameOver model={model}/>, $("#game").find(".Trouble")[0]);
+               "change:status":function(model){
+                    React.render(<Game.ReactClass.GameOver model={model}/>, $("#game").find(".Trouble")[0]);
+                    // this.save([],{
+                    //     success:function(model){
+                    //         React.render(<Game.ReactClass.GameOver model={model}/>, $("#game").find(".Trouble")[0]);
 
-                            wx.onMenuShareTimeline({
-                                title: 'Bee-Do~我在游戏中获得了' + Game.Init.xiaohuangren.get("currentScore") + '分，击败了' + Game.Init.xiaohuangren.get("rank") + '%的小黄人！不服来战，一起寻找单眼小黄人stuart！', // 分享标题
-                                link: window.location.href, // 分享链接
-                                imgUrl: wx.wechatShare// 分享图标
-                            });
-                            wx.onMenuShareAppMessage({
-                                title: '寻找单眼萌人Stuart', // 分享标题
-                                desc: 'Bee-Do~我在游戏中获得了' + Game.Init.xiaohuangren.get("currentScore") + '分，击败了' + Game.Init.xiaohuangren.get("rank") + '%的小黄人！不服来战，一起寻找单眼小黄人stuart！', // 分享描述
-                                link: window.location.href, // 分享链接
-                                imgUrl: wx.wechatShare,// 分享图标
-                                type: 'link'
-                            });
-                        }
-                    });
+                    //         wx.onMenuShareTimeline({
+                    //             title: 'Bee-Do~我在游戏中获得了' + Game.Init.xiaohuangren.get("currentScore") + '分，击败了' + Game.Init.xiaohuangren.get("rank") + '%的小黄人！不服来战，一起寻找单眼小黄人stuart！', // 分享标题
+                    //             link: window.location.href, // 分享链接
+                    //             imgUrl: wx.wechatShare// 分享图标
+                    //         });
+                    //         wx.onMenuShareAppMessage({
+                    //             title: '寻找单眼萌人Stuart', // 分享标题
+                    //             desc: 'Bee-Do~我在游戏中获得了' + Game.Init.xiaohuangren.get("currentScore") + '分，击败了' + Game.Init.xiaohuangren.get("rank") + '%的小黄人！不服来战，一起寻找单眼小黄人stuart！', // 分享描述
+                    //             link: window.location.href, // 分享链接
+                    //             imgUrl: wx.wechatShare,// 分享图标
+                    //             type: 'link'
+                    //         });
+                    //     }
+                    // });
                     console.log("游戏结束");
                 },
                 "change:rank":function(){
