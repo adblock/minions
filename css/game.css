@@ -5,7 +5,7 @@ body,html{
     height: 100%;
 }
 body.start {
-    background: url("../../img/game/bg.jpg");
+    background: url("https://raw.githubusercontent.com/adblock/minions/master/img/game/bg.jpg");
     background-size: cover;
 }
 ul {
