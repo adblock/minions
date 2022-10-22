@@ -25,7 +25,7 @@ li {
     text-align: center;
 }
 .element {
-    background: url("../../img/game/img-tiny.png?201504071156") no-repeat;
+    background: url("https://raw.githubusercontent.com/adblock/minions/master/img/game/img-tiny.png") no-repeat;
     background-size: 699px 1576px;
 }
 .game-title {
